@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>RealTalk</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Galada&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="nav-wrapper">
+            <div class="left-side">
+                <div class="nav-link-wrapper active-nav-link">
+                    <a href="index.html">Home</a>
+                </div>
+
+                <div class="nav-link-wrapper">
+                    <a href="about.html">Episodes</a>
+                </div>
+            </div>
+
+            <div class="right-side">
+                <div class="brand">
+                    <div><h1>The RealTalk Podcast</h1></div>
+                    
+                </div>
+            </div>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+
+        
+
+
+        <div class="content-wrapper">
+            <div class="latest-content">
+                <h1>
+                    Lastest Realease:
+                </h1>
+                <div class="latest-video">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+<!-- footer-->
+<div class="footer">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <div class="footer-content">
+        <div class="left-box">
+            <div class="footer-section-au">
+                <h2>About Us</h2>
+                <p>Established in 2021.</p>
+                
+            </div> 
+
+        </div>
+        
+        <div class="middle-box">
+            <div class="footer-section-cu">
+                <h2>Contact Us</h1>
+                <div class="content">
+                    <form action="#">
+                        <div class="email">
+                            <div class="text">Email</div>
+                            <input type="email" required>
+                        </div>
+                        <div class="msg">
+                            <div class="text">Message</div>
+                            <textarea  cols="22" rows="2"></textarea>
+                        </div>
+                        <div class="btn">
+                            <button type="submit">Send</button>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+        
+        <div class="socials-box">
+            <h2>Social Media</h2>
+            <li><a href="https://www.youtube.com/channel/UCJ15vJTDo0LfhvlUbeX5h7A">Youtube</a></li>
+            <li><a href="twitter">Twitter</a></li>
+            <li><a href="instagram">Instagram</a></li>
+        </div>
+        
+    </div>
+    <div class="footer-bottom">
+        &copy; LJH | Designed By Lewis Hodgson
+    </div>
+</div>
+<!-- // footer -->
+</body>
+
+<script>
+    const portfolioItems = document.querySelectorAll('.portfolio-item-wrapper')
+
+    portfolioItems.forEach(portfolioItem => {
+        portfolioItem.addEventListener('mouseover', () => {
+            portfolioItem.childNodes[1].classList.add('img-darken');
+        })
+
+        portfolioItem.addEventListener('mouseout', () => {
+            portfolioItem.childNodes[1].classList.remove('img-darken');
+        })
+    })
+</script>
+</html>

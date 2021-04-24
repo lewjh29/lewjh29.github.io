@@ -1,0 +1,284 @@
+/*Master styles*/
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    font-family: 'Galada', cursive;
+    background-color: #313131;
+    
+}
+
+.container {
+    display: grid;
+    
+    grid-template-columns: 1fr;
+}
+
+/* Nav styles*/
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    
+    
+    padding: 38px;
+}
+
+.left-side {
+    display: flex;
+    
+
+}
+.right-side {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.line {
+    display: flex;
+    width: 30px;
+    height: 3px;
+    background: rgb(255, 255, 255);
+    margin: 5px;
+    right: 5%;
+    
+}
+
+.nav-wrapper > .right-side > div{
+    
+    font-size: 3em;
+    font-weight: 600;
+    color:rgb(255, 255, 255)
+    
+    
+}
+
+.nav-wrapper > .left-side > div{
+    margin-right: 20px;
+    font-size: 1.1em;
+    font-weight: 600;
+    text-transform: uppercase;
+    
+}
+
+.content-wrapper {
+    min-height: 100vh;
+}
+
+.latest-content {
+    font-size: 20px;
+}
+
+/* footer */
+.footer {
+    background: #fccb2c;
+    color: rgb(255, 255, 255);
+    height: 250px;
+    width: 100%;
+    position: absolute;
+    font-family: 'Roboto', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    
+    
+}
+
+
+.footer-content h2 {
+    text-decoration: underline;
+}
+
+.footer-content p {
+    font-weight: 600;
+}
+.socials-box a {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    text-decoration: underline grey;
+    font-weight: 600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-bottom {
+    display: flex;
+    background: #dab028;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+/*NAVBAR*/
+
+.nav-link-wrapper {
+    height: 22px;
+    border-bottom: 1px solid transparent;
+    border-bottom: color rgb(255, 255, 255);
+    transition: border-bottom 0.5s;
+}
+
+.nav-link-wrapper a {
+    color: #fccb2c;
+    text-decoration: none;
+    border-bottom: color rgb(255, 255, 255);
+    transition: color 0.5s;
+}
+
+.nav-link-wrapper:hover {
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+}
+
+.nav-link-wrapper a:hover {
+    color: rgb(255, 255, 255);
+
+}
+
+.active-nav-link {
+    border-bottom: 1px solid rgb(255, 255, 255);
+
+}
+
+.active-nav-link a{
+    color: rgb(255, 255, 255) !important;
+}
+
+/* Portfolio styles */ 
+
+.portfolio-items-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.portfolio-item-wrapper {
+    position: relative;
+}
+
+.portfolio-img-background {
+    height: 300px;
+    width: 90%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    border-radius: 2rem;
+    
+}
+
+.img-text-wrapper {
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+    padding-left: 200px;
+    padding-right: 200px;
+}   
+
+
+
+.img-text-wrapper .subtitle {
+    transition: 1s;
+    font-weight: 800;
+    font-size: xx-large;
+    color: transparent;
+    position: absolute;
+    justify-content: center;
+    
+    
+}
+
+.img-text-wrapper:hover .subtitle {
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    
+}
+
+.img-darken {
+    transition: 1s;
+    filter: brightness(25%);
+}
+/* about page styles*/
+
+.two-column-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.profile-image-wrapper img {
+    width: 100%;
+    filter: brightness(80%);
+
+}
+
+.profile-content-wrapper {
+    padding: 30px;
+
+}
+
+.profile-content-wrapper h1{
+    color: orange;
+}
+
+
+/* MAIN PAGE */
+.latest-content {
+    display: flex;
+    background:rgb(34, 34, 34);
+    color: rgb(255, 255, 255);
+    border-radius: 3rem;
+    height: 800px;
+    margin: 5%;
+    
+    
+}
+
+.latest-content h1 {
+    margin: 2.5%;
+    text-decoration: underline;
+    
+}
+
+/*HAMBURGER MENU*/
